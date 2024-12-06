@@ -11,11 +11,10 @@ Installation guide for the Centralite 3157100 thermostat, covering setup, wiring
 - [Menu Options](#menu-options)
 
 ## Table of Contents
-- [Thermostat Installation Best Practices](#thermostat-installation-best-practices)
 - [Locating the Thermostat](#locating-the-thermostat)
 - [Remove Existing Unit](#remove-existing-unit)
 - [Installing the Thermostat](#installing-the-thermostat)
-- [Wiring Terminal](#wiring-terminal)
+- [Wiring Terminal Definitions](#wiring-terminal-definitions)
 - [Thermostat Configuration](#thermostat-configuration)
 - [Full Terminal View](#full-terminal-view)
 - [Thermostat Overview](#thermostat-overview)
@@ -28,7 +27,7 @@ Installation guide for the Centralite 3157100 thermostat, covering setup, wiring
 - [Programming Mode Menu Functions](#programming-mode-menu-functions)
 - [Menu Options](#menu-options)
 
-## Thermostat Installation Best Practices
+## Locating the Thermostat
 If this is to replace an existing thermostat, just use the existing thermostat location.
 
 If this is a new install, follow these suggestions:
@@ -37,6 +36,8 @@ If this is a new install, follow these suggestions:
 - Do not locate the thermostat near doors to the outside or windows.
 - Do not locate the thermostat in a damp area.
 - Do not locate the thermostat in an area that lacks air circulation.
+
+## Remove Existing Unit
 - Switch OFF the electricity to the HVAC unit.
 - Remove the cover to the existing thermostat.
 - Make a note of the terminal location for each wire connected to the thermostat wiring terminals (use enclosed labels to label wires). Wire colors are not standard, so it is important to note the terminal label each wire is connected to on the existing thermostat.
@@ -44,6 +45,42 @@ If this is a new install, follow these suggestions:
 - Once all wires are removed from the existing thermostat wiring terminal, remove the existing thermostat from the wall.
 - Make sure to leave at least 3” of wire for each connection onto the CentraLite thermostat wiring terminal.
 - Remove 1/8” insulation from the end of each wire.
+
+
+## Installing The Thermostat
+
+![Wiring Terminal Image](Wiring-Terminal-Image.png)
+
+- If removing another thermostat, please use the enclosed labels to label the wires from your old device.
+- Place each wire in the appropriate wire terminal. The wiring terminal is labeled as follows:
+
+| Left |Right |
+|-|-|
+| Y1 | B  |
+| G  | O  |
+| W1 | W2 |
+| RC | Y2 |
+| RH | C  |
+
+
+
+### Wiring Terminal Definitions
+
+| Terminal | Description |
+|----------|-------------|
+| Y1       | Cool Control / Compressor |
+| G        | Fan                      |
+| W1       | Heat Control             |
+| RC       | Power From Cooling       |
+| RH       | Power From Heating       |
+| B        | Heat Pump changeover (powered in heat mode) |
+| O        | Heat pump changeover (powered in cool mode) |
+| W2       | 2nd stage HEAT or Heat Pump auxiliary heat |
+| Y2       | 2nd Stage Cool Control   |
+| C        | Common                   |
+
+
+
 
 **See Figure-1 "Full Terminal View"**
 
@@ -61,9 +98,13 @@ The CentraLite thermostat can be powered by 4 AA batteries or by the power from 
 
 **Figure-1: Full Terminal View**
 
+![Full Terminal View](Figure-1-Full-Terminal-View.jpg)
+
 From the factory, the thermostat comes configured to work with single-stage Cool/Heat, single-speed fan systems. If your HVAC system is different, refer to the programming section to configure the thermostat for your system. If you have separate power for RH and RC, you will need to remove the factory-installed jumper between RH and RC.
 
 **Figure-2: Thermostat Overview**
+
+![Thermostat Overview](Figure-2-Thermostat-Overview.jpg)
 
 - After completing any necessary configuration, make sure the thermostat is in Cool mode by pressing the MODE button until "Cool" is displayed at the bottom of the screen. (See [Figure-3](#thermostat-operation))
 - Make sure the system is not calling for cooling by setting the setpoint several degrees above the room temperature. Then check the fan operation by pressing the Fan button. When the Fan indicator is illuminated, air should blow from the unit.
@@ -71,6 +112,8 @@ From the factory, the thermostat comes configured to work with single-stage Cool
 - Now change the system mode to Heat. Allow the system at least 3 minutes to respond. The Heat (flame) mode symbol should illuminate, and the system should be blowing hot air.
 
 **Figure-3: Thermostat Operation**
+
+![Thermostat Operation](Figure-3-Thermostat-Operation.jpg)
 
 - MODE button cycles between system modes: HEAT/COOL/E-H*/OFF
   - *E/H stands for emergency heat mode – this mode uses second-stage heat as a supplemental or back-up heat.
@@ -82,6 +125,8 @@ From the factory, the thermostat comes configured to work with single-stage Cool
 - Upon successfully joining a ZigBee HA network, the ZigBee Radio status indicator should illuminate. (See [Figure-4](#thermostat-functions))
 
 **Figure-4**
+
+![Zigbee](Figure-4-Zigbee.jpg)
 
 If the indicator does not illuminate, make sure the ZigBee HA system controller is “Open” for joining.
 
